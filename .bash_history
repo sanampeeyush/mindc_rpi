@@ -1653,3 +1653,97 @@ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 clear
 ls
 sudo reboot
+nmcli device
+ls
+sudo rm zlogs.txt 
+ls
+clear
+ls
+cat zlogs.txt 
+ls media/ -l
+sudo apt-get install
+sudo apt-get install git
+git
+git init
+git remote add origin "https://github.com/sanampeeyush/mindc_rpi"
+git config user.name "sanampeeyush"
+git config user.email "peeyush.sanam@gmail.com"
+git branch -M main
+git add .
+git commit -m "rpi code"
+git rm .
+git rm . -r
+clear
+sudo nano .gitignore
+ls
+git reset HEAD
+ls
+git reset HEAD --hard
+ls
+git status
+sudo nano .gitignore
+ls
+sudo nano .gitignore
+git status
+git add .
+ls
+git push origin
+git push --set-upstream origin main
+git remote -v
+git remote get-url origin
+git remote set-url origin https://sanampeeyush:ghp_k2Ul2ajgAbM4VzsdNgZ3VYP7Aw40jx2gWGu2@github.com/sanampeeyush/mindc_rpi.git
+git remote -v
+git push --set-upstream origin main
+git remote get-url origin
+git branch
+git log
+git push origin main
+git config user.email
+git config user.name
+git remote -v
+git push --set-upstream origin main
+git push origin main
+git config credential.helper
+git push -u origin main
+git remote remove origin
+clear
+git remote -v
+git remote add origin https://github.com/sanampeeyush/mindc_rpi.git
+git push -u origin main
+ssh-keygen -t ed25519 -C "peeyush.sanam@gmail.com"
+ls
+cat ~/.ssh/id_ed25519.pub 
+pbcopy
+xclip
+python3
+clear
+nano ~/.ssh/id_ed25519.pub 
+clear
+nano ~/.ssh/id_ed25519.pub 
+git push -u origin main
+git remote set-url origin "git@github.com:sanampeeyush/mindc_rpi.git"
+git push -u origin main
+cat ~/.ssh/id_ed25519.pub 
+sudo nano a.py
+sudo chmod +x a.py
+clear
+python a.py
+sudo nano a.py 
+n
+clear
+sudo nano a.py 
+python a.py
+ifconfig
+clear
+ifconfig
+python a.py 
+sudo nano a.py 
+python a.py 
+sudo nano a.py 
+python a.py 
+sudo python a.py 
+sudo nano a.py 
+sudo python a.py 
+ls
+ls ~/.ssh/
+sudo reboot
