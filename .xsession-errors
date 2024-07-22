@@ -1,0 +1,8 @@
+Xsession: X session started for pi at Tue 19 Sep 18:40:50 BST 2023
+WARNING: tempfile is deprecated; consider using mktemp instead.
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting XAUTHORITY=/home/pi/.Xauthority
+Xsession: unable to start X session --- no "/home/pi/.xsession" file, no 
+"/home/pi/.Xsession" file, no session managers, no window managers, and no 
+terminal emulators found; aborting.
