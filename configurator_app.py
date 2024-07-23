@@ -1,7 +1,7 @@
 from wlan_utility import update
 from logge import generate_log as logger
 from time import sleep
-from flask import Flask, request
+from flask import Flask, request, redirect
 import subprocess
 
 app = Flask(__name__)
@@ -68,6 +68,7 @@ def submit():
             ).stdout
             sleep(3)
             check_wifi()
+    return redirect("/")
 
 
 if __name__ == "__main__":
