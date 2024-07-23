@@ -1,6 +1,7 @@
 from wlan_utility import update
 from logge import generate_log as logger
 import os
+from time import sleep
 from flask import Flask, request, redirect
 
 app = Flask(__name__)
@@ -39,10 +40,12 @@ def submit():
         ssid = request.form["ssid"]
         password = request.form["password"]
         if update(ssid=ssid, pwd=password):
-            os.system(
-                f'nmcli con down Hotspot && sleep 2 && nmcli device wifi connect "{ssid}" password "{password}" && {check_wifi} &'
-            )
-            logger(f"sent for update, {ssid}, {password}")
+            os.system("nmcli con down Hotspot")
+            logger("hotspot turned off")
+            os.system(f'nmcli device wifi connect "{ssid}" password "{password}"')
+            logger(f"connect with {ssid}, {password}")
+            os.system(f"{check_wifi} &")
+            logger("checking wifi status again")
     return redirect("/")
 
 
