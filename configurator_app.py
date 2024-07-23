@@ -65,12 +65,14 @@ def submit():
         ssid = request.form["ssid"]
         password = request.form["password"]
         if update(ssid=ssid, pwd=password):
-            subprocess.run(
-                restart_wifi, shell=True, text=True, stdout=subprocess.PIPE
-            ).stdout
-            sleep(2)
+            # subprocess.run(
+            #     restart_wifi, shell=True, text=True, stdout=subprocess.PIPE
+            # ).stdout
+            # sleep(2)
+            os.system("nmcli con down Hotspot")
+            sleep(3)
             os.system(f'nmcli device wifi connect "{ssid}" password "{password}"')
-            sleep(2)
+            sleep(5)
             check_wifi()
     return redirect("/")
 
