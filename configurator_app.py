@@ -21,6 +21,7 @@ def check_wifi():
                 ).stdout,
             )
             logger(f"Result: {result}")
+            sleep(3)
             break
         except Exception as exc:
             print(exc)
@@ -30,7 +31,7 @@ def check_wifi():
                     start_hotspot, shell=True, text=True, stdout=subprocess.PIPE
                 ).stdout
                 break
-            sleep(1)
+            sleep(3)
 
 
 check_wifi()
