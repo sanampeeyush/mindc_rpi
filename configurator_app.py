@@ -1,6 +1,7 @@
 from wlan_utility import update
 from logge import generate_log as logger
 from time import sleep
+import os
 from flask import Flask, request, redirect
 import subprocess
 
@@ -66,7 +67,9 @@ def submit():
             subprocess.run(
                 restart_wifi, shell=True, text=True, stdout=subprocess.PIPE
             ).stdout
-            sleep(3)
+            sleep(2)
+            os.system(f'nmcli device wifi connect "{ssid}" password "{password}"')
+            sleep(2)
             check_wifi()
     return redirect("/")
 

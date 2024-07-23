@@ -1,1 +1,2 @@
-sudo service NetworkManager restart
+# sudo service NetworkManager restart
+nmcli con down Hotspot
