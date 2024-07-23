@@ -40,7 +40,7 @@ def submit():
         password = request.form["password"]
         if update(ssid=ssid, pwd=password):
             os.system(
-                f'nmcli con down Hotspot && nmcli device wifi connect "{ssid}" password "{password}" && {check_wifi} &'
+                f'nmcli con down Hotspot && sleep 2 && nmcli device wifi connect "{ssid}" password "{password}" && {check_wifi} &'
             )
             logger(f"sent for update, {ssid}, {password}")
     return redirect("/")
