@@ -59,7 +59,7 @@ def home():
     return html_content
 
 
-@app.route("/submit", methods=["POST"])
+@app.route("/submit", methods=["POST", "GET"])
 def submit():
     if request.method == "POST":
         ssid = request.form["ssid"]
